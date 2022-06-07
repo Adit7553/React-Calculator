@@ -1,8 +1,6 @@
 import React,{useState} from 'react';
 import './App.css';
 
-
-
 function App() {
 
   const [result, setResult] = useState("")
@@ -21,9 +19,8 @@ function App() {
         if(result.charAt(result.length - 2) === "*" || result.charAt(result.length - 2) === "/" || result.charAt(result.length - 2) === "+"|| result.charAt(result.length - 2) === "-" ){
         setResult(result.slice(0,- 1))
        }
+    }
   }
- }
-
 
   const handleClear = (e)=>{
     setResult("")
